@@ -48,6 +48,13 @@ android {
         main {
             assets.srcDirs = ['/res/raw']
         }
+        String sharedTestDir = 'src/sharedTest/java'
+        test {
+            java.srcDir sharedTestDir
+        }
+        androidTest {
+            java.srcDir sharedTestDir
+        }
     }
 }
 
@@ -62,17 +69,6 @@ dependencies {
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
 
     implementation "com.google.android.gms:play-services-maps:17.0.0"
-
-
-//    // RxJava
-//    implementation "io.reactivex.rxjava2:rxjava:2.2.10"
-//    implementation "io.reactivex.rxjava2:rxkotlin:2.3.0"
-//    implementation "io.reactivex.rxjava2:rxandroid:2.1.1"
-
-    // LiveData & ViewModel
-//    implementation "android.arch.lifecycle:extensions:${arch_ver}"
-//    implementation "android.arch.lifecycle:livedata:${arch_ver}"
-//    implementation "android.arch.lifecycle:reactivestreams:${arch_ver}"
 
     // ViewModel and LiveData
     implementation "androidx.lifecycle:lifecycle-extensions:$lifecycle_version"
@@ -91,19 +87,16 @@ dependencies {
     implementation "androidx.recyclerview:recyclerview-selection:$recyclerview_version"
 
     // optional - ReactiveStreams support for LiveData
-    implementation "androidx.lifecycle:lifecycle-reactivestreams:$lifecycle_version" // For Kotlin use lifecycle-reactivestreams-ktx
+//    implementation "androidx.lifecycle:lifecycle-reactivestreams:$lifecycle_version" // For Kotlin use lifecycle-reactivestreams-ktx
 
     // optional - Test helpers for LiveData
     testImplementation "androidx.arch.core:core-testing:$lifecycle_version"
 
-// Dagger 2 <-- part of the google realm (allowed)
+    // Dagger 2 <-- part of the google realm
     implementation "com.google.dagger:dagger:${dagger_ver}"
     kapt "com.google.dagger:dagger-compiler:${dagger_ver}"
 
-//    dagger.android
-//    compile 'com.google.dagger:dagger-android:2.x'
-//    compile 'com.google.dagger:dagger-android-support:2.x' // if you use the support libraries
-//    annotationProcessor 'com.google.dagger:dagger-android-processor:2.x'
+
 
     // Allowed 3rd party libs:
     implementation "com.google.code.gson:gson:2.8.6"

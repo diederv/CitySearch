@@ -4,6 +4,7 @@ import android.content.Context
 import android.content.res.Resources
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
+import com.deedee.citysearch.R
 import com.deedee.citysearch.util.classOf
 import java.io.RandomAccessFile
 
@@ -13,6 +14,7 @@ import java.io.RandomAccessFile
 class ViewModelFactory(
     private val context: Context,
     private val resources: Resources,
+    private val inputResourceFile: Int,
     private val randomAccessFile: RandomAccessFile
 ): ViewModelProvider.NewInstanceFactory() {
 
@@ -20,7 +22,7 @@ class ViewModelFactory(
     override fun <T : ViewModel?> create(modelClass: Class<T>): T {
         return when {
             modelClass.isAssignableFrom(classOf<SearchViewModel>()) -> SearchViewModel(randomAccessFile) as T
-            modelClass.isAssignableFrom(classOf<IndexViewModel>()) -> IndexViewModel(resources, randomAccessFile) as T
+            modelClass.isAssignableFrom(classOf<IndexViewModel>()) -> IndexViewModel(resources, randomAccessFile, inputResourceFile) as T
             else -> throw IllegalArgumentException("Unknown ViewModel class: ${modelClass.name}")
         }
     }

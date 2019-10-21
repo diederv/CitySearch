@@ -7,6 +7,9 @@ import com.deedee.citysearch.CitySearchApp
 import dagger.Module
 import dagger.Provides
 
+/**
+ * @author diederick.
+ */
 @Module(includes = [ServiceModule::class])
 class ApplicationModule(private val application: CitySearchApp) {
 

@@ -17,7 +17,7 @@ import java.io.RandomAccessFile
 /**
  * @author diederick.
  */
-class IndexViewModel(val resources: Resources, val randomAccessFile: RandomAccessFile): DisposingViewModel() {
+class IndexViewModel(val resources: Resources, val randomAccessFile: RandomAccessFile, val inputResourceFile: Int): DisposingViewModel() {
 
     companion object {
         val INDEX_HEAD_SIZE: Int = 4
