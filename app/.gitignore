@@ -1,0 +1,15 @@
+*.iml
+.gradle
+/local.properties
+
+# User-specific configurations
+.idea/libraries/*
+*.iml
+
+.DS_Store
+/build
+/captures
+/keystore.properties
+
+.idea/*
+app/release/output.json

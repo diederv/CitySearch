@@ -1,0 +1,72 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="Percentage">
+        <item name="android:textSize">30sp</item>
+        <item name="android:fontFamily">@font/proxima_nova_semibold</item>
+    </style>
+
+    <style name="Header">
+        <item name="android:textSize">25sp</item>
+        <item name="android:fontFamily">@font/proxima_nova_regular_italic</item>
+    </style>
+
+    <style name="City">
+        <item name="android:textSize">16sp</item>
+        <item name="android:fontFamily">@font/proxima_nova</item>
+    </style>
+
+    <style name="City.Search">
+        <item name="android:paddingLeft">17dp</item>
+        <item name="android:layout_marginTop">8dp</item>
+        <item name="android:layout_marginBottom">8dp</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:fontFamily">@font/proxima_nova_bold</item>
+    </style>
+
+    <style name="City.Name">
+        <item name="android:paddingLeft">17dp</item>
+        <item name="android:paddingTop">15dp</item>
+        <item name="android:fontFamily">@font/proxima_nova_bold</item>
+    </style>
+
+    <style name="City.Country">
+        <item name="android:paddingLeft">8dp</item>
+        <item name="android:fontFamily">@font/proxima_nova</item>
+    </style>
+
+    <style name="City.Lat">
+        <item name="android:paddingLeft">17dp</item>
+        <item name="android:paddingTop">5dp</item>
+        <item name="android:paddingBottom">12dp</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:fontFamily">@font/proxima_nova_regular_italic</item>
+    </style>
+
+    <style name="City.Lon">
+        <item name="android:paddingLeft">8dp</item>
+        <item name="android:paddingTop">5dp</item>
+        <item name="android:paddingBottom">12dp</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:fontFamily">@font/proxima_nova_regular_italic</item>
+    </style>
+
+    <style name="CityInfoButton">
+        <item name="android:fontFamily">@font/proxima_nova_regular_italic</item>
+        <item name="android:background">@color/info_button_background_color</item>
+    </style>
+
+    <style name="NoResults">
+        <item name="android:fontFamily">@font/proxima_nova_regular_italic</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <style name="ProgressBar" />
+
+</resources>

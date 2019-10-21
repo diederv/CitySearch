@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    
+    <data>
+        <import type="android.view.View" />
+        <variable name="city" type="com.deedee.citysearch.model.City" />
+        <variable name="cityDecorator" type="com.deedee.citysearch.CityDecorator" />
+        <variable name="onSelectCity" type="com.deedee.citysearch.OnSelectCityImpl" />
+        <variable name="onSelectInfo" type="com.deedee.citysearch.OnSelectInfoImpl" />
+        <variable name="even" type="Boolean" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:onClick="@{onSelectCity.onClickListener}"
+        android:background="@{safeUnbox(even) ? @color/even : @color/odd}" >
+
+        <TextView
+            android:id="@+id/name"
+            style="@style/City.Name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@{city.name}"
+            tools:text="Amsterdam"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/code"
+            style="@style/City.Country"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@{city.country}"
+            tools:text="NL"
+            app:layout_constraintStart_toEndOf="@id/name"
+            app:layout_constraintBottom_toBottomOf="@id/name" />
+
+        <TextView
+            android:id="@+id/lat"
+            style="@style/City.Lat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@{cityDecorator.lat}"
+            tools:text="48.104568"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/name" />
+
+        <TextView
+            android:id="@+id/lon"
+            style="@style/City.Lon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@{cityDecorator.lon}"
+            tools:text="14.85299"
+            app:layout_constraintStart_toEndOf="@id/lat"
+            app:layout_constraintBottom_toBottomOf="@id/lat" />
+
+        <Button
+            style="@style/CityInfoButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/info"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:onClick="@{onSelectInfo.onClickListener}"
+            android:layout_marginRight="12dp"
+            android:layout_marginTop="12dp" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+</layout>

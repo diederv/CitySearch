@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">City Search</string>
+    <string name="search_hint">Search for a city</string>
+    <string name="percentage">%1$s Procent</string>
+    <string name="percentage_header">Building Index..</string>
+    <string name="info">Info</string>
+    <string name="ok">Ok</string>
+    <string name="no_results">No Results</string>
+</resources>
