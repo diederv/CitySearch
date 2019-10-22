@@ -55,6 +55,8 @@ The Android Studio project that forms the basis of the Android App, should be co
 - It contains tests for the IndexServices and for the SearchService
 - It contains an UI EspressoTest 
 
+
+
 ## Screenshots:
 
 The Splash screen (while creating the indices)
@@ -76,6 +78,8 @@ And in landscape mode:
 ![search_map_screen_landscape](https://user-images.githubusercontent.com/2026484/67287920-4b034a00-f4dc-11e9-9671-b821582e09d4.png)
 
 ![city_info_screen_landscape](https://user-images.githubusercontent.com/2026484/67287917-4b034a00-f4dc-11e9-92fb-82b79f6106bf.png)
+
+
 
 ## Problem in Android Studio 3.5
 
