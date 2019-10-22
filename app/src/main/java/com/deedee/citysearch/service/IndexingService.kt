@@ -43,15 +43,15 @@ class IndexingService(val input: IndexInput, val publishProgress: (Int) -> Unit)
         a -> pointer to line: 0
 
         index 2:
-        aa -> ponter to line: 0
-        ab -> ponter to line: 1
-        am -> ponter to line: 6
+        aa -> pointer to line: 0
+        ab -> pointer to line: 1
+        am -> pointer to line: 6
 
         index 3:
-        aal -> ponter to line: 0
-        abb -> ponter to line: 1
-        abc -> ponter to line: 4
-        ams -> ponter to line: 6
+        aal -> pointer to line: 0
+        abb -> pointer to line: 1
+        abc -> pointer to line: 4
+        ams -> pointer to line: 6
 
         when a call is made to the SearchService, a look-up is done using the search term, on the biggest relevant index.
         The returned value points to the first occurence (if any) of one ore more occurences of cities that have a name that starts with that term.
