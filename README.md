@@ -55,6 +55,26 @@ The Android Studio project that forms the basis of the Android App, should be co
 - It contains tests for the IndexServices and for the SearchService
 - It contains an UI EspressoTest 
 
+##Screenshots:
 
-Regards,
+The Splash screen (while creating the indices)
+![splash_screen](https://user-images.githubusercontent.com/2026484/67287915-4a6ab380-f4dc-11e9-9957-e3a28f2b3a0b.png)
+
+The search screen (portrait)
+![search_screen](https://user-images.githubusercontent.com/2026484/67287912-49d21d00-f4dc-11e9-86b8-32b755ac6a7e.png)
+
+Selecting a city brings you to the google-map with that city
+![map_screen](https://user-images.githubusercontent.com/2026484/67287914-4a6ab380-f4dc-11e9-86f8-8982b07b7294.png)
+
+Going back to the search result with the list of cities, and clicking on the info-button shows:
+![city_info_screen](https://user-images.githubusercontent.com/2026484/67287913-4a6ab380-f4dc-11e9-9faa-f38c81617b09.png)
+
+
+And in landscape mode:
+![splash_screen_landscape](https://user-images.githubusercontent.com/2026484/67287919-4b034a00-f4dc-11e9-951c-94e9c291e8fb.png)
+![search_map_screen_landscape](https://user-images.githubusercontent.com/2026484/67287920-4b034a00-f4dc-11e9-9671-b821582e09d4.png)
+![city_info_screen_landscape](https://user-images.githubusercontent.com/2026484/67287917-4b034a00-f4dc-11e9-92fb-82b79f6106bf.png)
+
+
+Best Regards,
 Diederick Verweij
