@@ -1,10 +1,8 @@
 package com.deedee.citysearch.viewmodel
 
-import android.content.Context
 import android.content.res.Resources
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
-import com.deedee.citysearch.R
 import com.deedee.citysearch.util.classOf
 import java.io.RandomAccessFile
 
@@ -12,7 +10,6 @@ import java.io.RandomAccessFile
  * @author diederick.
  */
 class ViewModelFactory(
-    private val context: Context,
     private val resources: Resources,
     private val inputResourceFile: Int,
     private val randomAccessFile: RandomAccessFile

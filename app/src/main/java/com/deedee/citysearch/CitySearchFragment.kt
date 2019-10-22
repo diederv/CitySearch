@@ -11,6 +11,7 @@ import com.deedee.citysearch.fragment.BaseFragment
 import com.deedee.citysearch.viewmodel.SearchViewModel
 import android.text.Editable
 import com.deedee.citysearch.model.City
+import com.deedee.citysearch.util.setupClearButtonWithAction
 import java.util.*
 
 
@@ -46,6 +47,7 @@ class CitySearchFragment: BaseFragment<FragmentCitySearchBinding>() {
         binding.filter.addTextChangedListener(textWatcher)
 
         binding.result.adapter = adapter
+        binding.filter.setupClearButtonWithAction()
 
         searchViewModel.results.observe(this, androidx.lifecycle.Observer {
             adapter.setResults(it)
@@ -59,6 +61,7 @@ class CitySearchFragment: BaseFragment<FragmentCitySearchBinding>() {
         private var timer: Timer? = null
 
         override fun afterTextChanged(editable: Editable) {
+            searchViewModel.searchTerm = editable.toString()
             timer = Timer()
             timer?.schedule(object : TimerTask() {
                 override fun run() {
@@ -72,6 +75,11 @@ class CitySearchFragment: BaseFragment<FragmentCitySearchBinding>() {
         override fun onTextChanged(s: CharSequence, start: Int, before: Int, count: Int) {
             timer?.cancel()
         }
+    }
+
+    override fun onResume() {
+        super.onResume()
+        binding.filter.setText(searchViewModel.searchTerm)
     }
 
 }

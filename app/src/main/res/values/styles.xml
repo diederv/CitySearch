@@ -7,6 +7,11 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <style name="Logo">
+        <item name="android:src">@drawable/ic_location_city</item>
+        <item name="android:tint">@color/progress</item>
+    </style>
+
     <style name="Percentage">
         <item name="android:textSize">30sp</item>
         <item name="android:fontFamily">@font/proxima_nova_semibold</item>

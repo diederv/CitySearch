@@ -8,6 +8,5 @@ import androidx.lifecycle.ViewModel
  */
 abstract class DisposingViewModel : ViewModel() {
 
-
     abstract override fun onCleared()
 }

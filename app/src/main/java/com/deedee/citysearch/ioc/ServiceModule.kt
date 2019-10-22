@@ -23,11 +23,9 @@ class ServiceModule {
     @Provides
     @Singleton
     fun getViewModelFactory(
-            context: Context,
             resources: Resources,
             randomAccessFile: RandomAccessFile) =
         ViewModelFactory(
-            context,
             resources,
             inputResourceFile,
             randomAccessFile

@@ -3,7 +3,6 @@ package com.deedee.citysearch
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import androidx.databinding.DataBindingUtil
 import androidx.recyclerview.widget.RecyclerView
 import androidx.databinding.ViewDataBinding
 import com.deedee.citysearch.databinding.ItemCityBinding

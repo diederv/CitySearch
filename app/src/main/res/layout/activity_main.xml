@@ -24,7 +24,17 @@
             android:background="@color/white"
             android:visibility="@{safeUnbox(viewModel.indexReady) ? View.GONE : View.VISIBLE}">
 
+            <ImageView
+                style="@style/Logo"
+                android:layout_width="72dp"
+                android:layout_height="72dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintBottom_toTopOf="@id/header"
+                android:layout_marginBottom="32dp" />
+
             <TextView
+                android:id="@+id/header"
                 style="@style/Header"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
