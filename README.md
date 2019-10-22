@@ -72,7 +72,9 @@ Going back to the search result with the list of cities, and clicking on the inf
 
 And in landscape mode:
 ![splash_screen_landscape](https://user-images.githubusercontent.com/2026484/67287919-4b034a00-f4dc-11e9-951c-94e9c291e8fb.png)
+
 ![search_map_screen_landscape](https://user-images.githubusercontent.com/2026484/67287920-4b034a00-f4dc-11e9-9671-b821582e09d4.png)
+
 ![city_info_screen_landscape](https://user-images.githubusercontent.com/2026484/67287917-4b034a00-f4dc-11e9-92fb-82b79f6106bf.png)
 
 
