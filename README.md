@@ -1,7 +1,7 @@
 # CitySearch
 
 This Android App creates a set of in-memory indices at startup to allow for a fast lookup by a search-term.
-A simple linear search would not perform very well since the total number of cities is pretty high (it contains 209556 cities). 
+A simple linear search would not perform very well since the total number of cities that it needs to include is pretty high (it contains 209556 cities). 
 
 For example, if the following small set of cities needs to be indexed:
 
@@ -16,7 +16,7 @@ For example, if the following small set of cities needs to be indexed:
 |6|Amsterdam|
 |7|Amstelveen|
 
-then the **IndexService** wil create 4 indices like follows:
+then the **IndexService** wil create 4 indices as follows:
 
 index 1:
 a -> pointer to line: 0
@@ -39,8 +39,8 @@ abco -> pointer to line: 4
 amst -> pointer to line: 6
 
 Besides these indices, the IndexService will create a RandomAccessFile that contains all the city in alphabetical order. 
-The pointers mentioned in the example indices refer to the first occurance of a matching city, and because the cities are ordered alphabetically, 
-the sequantial matches will occur right after, The **SearchService** will, in case of a user-query retrieve these follow-up matching cities.
+The pointers mentioned in the example-indices refer to the first occurance of a matching city, and because the cities are ordered alphabetically, the other matching cities (if any) will occur sequentially, The **SearchService** will, in case of a user-query, retrieve these follow-up matching cities.
+
 
 **Constrains and Requirements**
 
