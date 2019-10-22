@@ -77,6 +77,16 @@ And in landscape mode:
 
 ![city_info_screen_landscape](https://user-images.githubusercontent.com/2026484/67287917-4b034a00-f4dc-11e9-92fb-82b79f6106bf.png)
 
+##Problem in Android Studio 3.5
+
+If you run into the following problem with Android Studio (3.5)
+<img width="785" alt="android_studio_problem" src="https://user-images.githubusercontent.com/2026484/67289040-3b850080-f4de-
+11e9-8bda-f007f5eb0a7a.png">
+
+Then you can solve that by updating this versin of Android Studio to version 3.5.1
+(Bij using the option: "Check for Updates")
+
+
 
 Best Regards,
 Diederick Verweij
