@@ -22,9 +22,9 @@ index 1:
 a -> pointer to line: 0
 
 index 2:
-aa -> pointer to line: 0/n
-ab -> pointer to line: 1/n
-am -> pointer to line: 6/n
+|aa |->| pointer to line: 0|
+|ab| -> |pointer to line: 1|
+|am| -> |pointer to line: 6|
 
 index 3:
 aal -> pointer to line: 0
