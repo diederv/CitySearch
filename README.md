@@ -19,24 +19,24 @@ For example, if the following small set of cities needs to be indexed:
 then the **IndexService** wil create 4 indices as follows:
 
 index 1:
-a -> pointer to line: 0
+a -> pointer to line: 0 . 
 
 index 2:
-|aa|->|pointer to line: 0|
-|ab|->|pointer to line: 1|
-|am|->|pointer to line: 6|
+aa -> pointer to line: 0 .   
+ab -> pointer to line: 1 . 
+am -> pointer to line: 6 . 
 
 index 3:
-aal -> pointer to line: 0
-abb -> pointer to line: 1
-abc -> pointer to line: 4
-ams -> pointer to line: 6
+aal -> pointer to line: 0 . 
+abb -> pointer to line: 1 . 
+abc -> pointer to line: 4 . 
+ams -> pointer to line: 6 . 
 
 index 4:
-aals -> pointer to line: 0
-abbe -> pointer to line: 1
-abco -> pointer to line: 4
-amst -> pointer to line: 6
+aals -> pointer to line: 0 . 
+abbe -> pointer to line: 1 . 
+abco -> pointer to line: 4 . 
+amst -> pointer to line: 6 . 
 
 Besides these indices, the IndexService will create a RandomAccessFile that contains all the city in alphabetical order. 
 The pointers mentioned in the example-indices refer to the first occurance of a matching city, and because the cities are ordered alphabetically, the other matching cities (if any) will occur sequentially, The **SearchService** will, in case of a user-query, retrieve these follow-up matching cities.
